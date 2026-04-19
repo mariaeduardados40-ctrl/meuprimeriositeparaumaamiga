@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <title>Pedido de Namoro</title>
+    <style>
+        input { 
+            background-color: transparent;
+            color: #000000;
+            border: #000000;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <form>
+            <h1>Eu te amo </h1>
+            <div class="input-box">
+               <input type="text" placeholder="Login" id="login">
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" id="senha">
+                <i class='bx bxs-lock'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="submit" onclick="logar(); return false">
+                </label>
+            </div>
+                <p>Dica: A melhor decisão de nossas vidas!!!!! </p>
+            </div>
+        </form>
+
+        <script>
+            function logar () {
+                var login = document.getElementById("login").value;
+                var senha = document.getElementById("senha").value;
+
+              if (login == "eugostodevocé" && senha == "05042026") {
+                    alert("essa é a melhor decisão da minha vida, eu te amo muito !!!");
+                    location.href= "home.html";
+                } else {
+                    alert("papo de ternimo, vaza !!!");
+                }
+            }
+        </script>
+
+    </main>
+
+</body>
+
+</html>

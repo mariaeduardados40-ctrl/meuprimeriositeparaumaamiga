@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer namorar comigo?</title>
+</head>
+s
+
+<body>
+    <div id="conteudo">
+
+        <h2>Quer namorar comigo?</h2>
+        <button onclick="sim()">SIM</button>
+        <button onclick="nao()">NÃO</button>
+    </div>
+</body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    body {
+        background-color: #000000;
+    }
+    #conteudo {
+        text-align: center;
+        margin-top: 100px;
+        align-items: center;
+        min-height: 100px;
+    }
+    h2 {
+        color: #85009c;
+        font-family: 'Poppins', sans-serif;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: transparent;
+        color: #be14b8;
+        border: #85009c solid 2px;
+        cursor: pointer;
+        border-radius: 50px;
+        box-shadow: #85009c 0px 0px 10px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        margin: 10px;
+    }
+</style>
+
+<script>
+    function sim() {
+        alert("parabens, você aceitou namorar comigo, agora é só ser feliz comigo <3");
+    }
+    function nao() {
+        alert("erro tente novamente <3");
+        
+    }
+</script>
+</html>
